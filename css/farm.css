@@ -1,0 +1,356 @@
+body {
+	  background: #F5F6FF;
+}
+@font-face {
+	font-family: 'GilroyBold'; 
+	src: url(../font/Gilroy/Gilroy-ExtraBold.otf); 
+}
+@font-face {
+	font-family: 'Gilroy'; 
+	src: url(../font/Gilroy/Gilroy-Medium.ttf); 
+}
+.farming .content {
+  min-width: 1185px;
+  max-width: 1185px;
+  margin: auto;
+}
+.farming .page-0 .content-header {
+	margin-bottom: 24px;
+}
+.farming .page-0 .content-header .text {
+   font-family: GilroyBold;
+   font-style: italic;
+   font-weight: 800;
+   font-size: 36px;
+   line-height: 45px;
+   color: #6855DE;
+}
+.farming .page-0 .content-block {
+  display: flex;
+  justify-content: space-between;
+}
+.farming .page-0 .content-block .block-right {
+	width: 796px;
+  height: 80px;
+  background: #FFFFFF;
+  border-radius: 12px;
+}
+.farming .page-0 .content-block .block-right .blocks {
+	margin-left: 24px;
+	display: flex;
+}
+.farming .page-0 .content-block .block-right .block {
+	margin-right: 20px;
+	margin-top: 11px;
+  text-align: center;
+  position: relative;
+}
+.farming .page-0 .content-block .block-right .block .text {
+	font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #473A4B;
+  margin-top: 0px;
+  position: absolute;
+  left: -5px;
+  right: 0px;
+  top: 42px;
+}
+.farming .page-0 .content-block .block-left .connect-button {
+    width: 280px;
+    height: 48px;
+    background: #6855DE;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 8px;
+}
+.farming .page-0 .content-block .block-left .connect-data {
+    display: flex;
+    justify-content: center;
+}
+.farming .page-0 .content-block .block-left .connect-button .connect-header {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 0px;
+    margin-left: 8px;
+    margin-bottom: 0px;
+}
+.farming .page-0 .content-block .block-left .connect-button .connect-image {
+    margin-right: 8px;
+}
+.farming .page-0 .content-block .block-left .error {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #CC2424;
+    margin: 0px;
+}
+.farming .page-1 {
+  margin-top: 33px;
+}
+.farming .page-1 .content-filter .block-platforms {
+    width: 383px;
+    height: 56px;
+    border: 1px solid #6855DE;
+    box-sizing: border-box;
+    border-radius: 40px;
+ }
+ .farming .page-1 .content-filter .block-platforms .platforms,
+ .farming .page-1 .content-filter .blocks .block-left .block-vaults .vaults {
+    display: flex;
+    margin-top: 7px;
+    justify-content: center;
+ }
+ .farming .page-1 .content-filter .block-platforms .platforms .platform,
+ .farming .page-1 .content-filter .blocks .block-left .block-vaults .vaults .vault {
+    margin-left: 4px;
+    margin-right: 4px;
+ }
+.farming .page-1 .content-filter .block-platforms .platforms .platform .btn,
+.farming .page-1 .content-filter .blocks .block-left .block-vaults .vaults .vault .btn {
+    border-radius: 36px;
+    cursor: pointer;
+    background: #F5F6FF;
+    border: 1px solid #F5D1FF;
+ }
+.farming .page-1 .content-filter .block-platforms .platforms .platform .active,
+.farming .page-1 .content-filter .blocks .block-left .block-vaults .vaults .vault .active {
+    background: #F5D1FF;
+    border:none;
+ }
+.farming .page-1 .content-filter .block-platforms .platforms .platform .btn .header,
+.farming .page-1 .content-filter .blocks .block-left .block-vaults .vaults .vault .btn .header {   
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #473A4B;
+    margin: 0px;
+ }
+.farming .page-1 .content-filter .block-platforms .platforms .platform .btn .img {   
+    margin-right: 8px;
+ }
+.farming .page-1 .content-filter .block-platforms .platforms .platform .btn .btn-data {   
+    display: flex;
+    justify-content: center;
+ }
+.farming .page-1 .content-filter .blocks {
+    margin-top: 24px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+ }
+ .farming .page-1 .content-filter .blocks .block-left {
+    display: flex;
+    align-items: center;
+ }
+.farming .page-1 .content-filter .blocks .block-left .block-vaults {
+    width: 305px;
+    height: 56px;
+    border: 1px solid #6855DE;
+    box-sizing: border-box;
+    border-radius: 40px;
+    margin-right: 18px;
+ }
+ .farming .page-1 .content-filter .blocks .block-left .switch {
+    display: flex;
+    align-items: center;
+ }
+.farming .page-1 .content-filter .blocks .block-left .switch .switch-check {
+    width: 37px;
+    height: 22px;
+    border-radius: 11px;
+    background: #3772FF;
+    position: relative;
+    -webkit-appearance: none;
+    cursor: pointer;
+    margin-right: 8px;
+}
+.farming .page-1 .content-filter .blocks .block-left .switch .switch-check:checked {
+}
+.farming .page-1 .content-filter .blocks .block-left .switch .switch-check:before {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #F5D1FF;
+    content: '';
+    transition: .5s;
+}
+.farming .page-1 .content-filter .blocks .block-left .switch .switch-check:checked:before {
+    left: 16px;
+}
+.farming .page-1 .content-filter .blocks .block-left .switch .header {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #473A4B;
+    margin: 0px;
+}
+.farming .page-1 .content-filter .blocks .block-right .block {
+   width: 300px;
+   height: 48px;
+   background: #FFFFFF;
+   border-radius: 12px;
+   margin: auto;
+   text-align: right;
+   position: relative;
+}
+.farming .page-1 .content-filter .blocks .block-right .block .search {
+    width: 240px;
+    height: 48px;
+    background: #FFFFFF;
+    border-radius: 12px;
+    border: none;
+}
+.farming .page-1 .content-filter .blocks .block-right .block .search:focus {
+    outline:none;
+}
+.farming .page-1 .content-filter .blocks .block-right .block .search::placeholder {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #473A4B;
+  text-align: left;
+  margin-right: 10px;
+}
+.farming .page-1 .content-filter .blocks .block-right .block .search-image {
+  position: absolute;
+  left: 22px;
+  bottom: 14px;
+}
+.farming .page-1 .content-table {
+  margin-top: 60px;
+}
+.farming .page-1 .content-table .vaults-table_header {
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-bottom: 1px solid #3773FE;
+}
+.farming .page-1 .content-table .vaults-table_header .vaults-table__header-cell .header {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+.farming .page-1 .content-table .vaults-table_row {
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-bottom: 1px solid #3773FE;
+}
+.farming .page-1 .content-table .vaults-table_row .vaults-table__header-cell {
+    display: flex;
+}
+.farming .page-1 .content-table .vaults-table_row .vaults-table__header-cell .pair-image {  
+    margin: auto;
+    display: flex;
+    width: 45px;
+}
+.farming .page-1 .content-table .vaults-table_row .vaults-table__header-cell .pair-image .para {  
+    width: 34px;
+    height: 20px;
+}
+.farming .page-1 .content-table .vaults-table_row .vaults-table__header-cell .pair-name .header-big,
+.farming .page-1 .content-table .vaults-table_row .wallet-table__header-cell .header-big,
+.farming .page-1 .content-table .vaults-table_row .deposit-table__header-cell .header-big,
+.farming .page-1 .content-table .vaults-table_row .daily-table__header-cell .header-big,
+.farming .page-1 .content-table .vaults-table_row .week-table__header-cell .header-big,
+.farming .page-1 .content-table .vaults-table_row .year-table__header-cell .header-big {  
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #473A4B;
+    margin-bottom: 1px;
+    margin-top: 15px;
+}
+.farming .page-1 .content-table .vaults-table_row .vaults-table__header-cell .pair-name .header-small {  
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #473A4B;
+    margin-top: 0px;
+}
+.farming .page-1 .content-table .vaults-table_row .wallet-table__header-cell .header-small {  
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #473A4B;
+    margin-top: 4px;
+}
+.farming .page-1 .content-table .vaults-table_row .deposit-table__header-cell .header-small {  
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #473A4B;
+    margin-top: 4px;
+}
+.farming .page-1 .content-table .vaults-table_row .open-table__header-cell .farming-open, 
+.farming .page-1 .content-table .vaults-table_header .vaults-table__header-cell .farming-update{  
+    border: 0;
+    background-color: unset;
+    cursor: pointer;
+}
+.farming .page-2 {
+    margin-top: 103px;
+    padding-bottom: 60px;
+}
+.farming .page-2 .content-header {
+   margin-top: 30px;
+}
+.farming .page-2 .line {
+    background: linear-gradient(90.64deg, #3773FE 0.18%, #D143FB 100.23%);
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+.farming .page-2 .content-header .content-left {
+    text-align: left;
+    height: 10px;
+}
+.farming .page-2 .content-header .content-left .header {
+    font-family: 'GilroyBold';
+    font-style: italic;
+    font-weight: 800;
+    font-size: 52px;
+    line-height: 65px;
+    color: #6855DE;
+    margin: 0px;
+}
+.farming .page-2 .content-header .content-right {
+    display: flex;
+    justify-content: right;
+}
+.farming .page-2 .content-header .content-right .block {
+    margin-right: 13.5px;
+    margin-left: 13.5px;
+}

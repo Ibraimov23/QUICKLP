@@ -1,0 +1,17 @@
+/*
+let platform_select = document.
+querySelector(".farming .page-1 .content-filter .block-platforms .platforms .platform .select").classList;
+function platform_category(data) {
+	platform_select.remove("active");
+	const classes = data.classList;
+	classes.add("active");
+	platform_select = classes;
+}
+let vault_select = document.
+querySelector(".farming .page-1 .content-filter .blocks .block-left .block-vaults .vaults .vault .select").classList;
+function vault_category(data) {
+	vault_select.remove("active");
+	const classes = data.classList;
+	classes.add("active");
+	vault_select = classes;
+}*/

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" >
+
+</head>
+<body>
+<div id="app">
+   <div class="panel panel-default">
+   <div class="panel-heading">
+         <strong> All Resources</strong></div>
+            <div class="row">
+                 <div class="search-wrapper panel-heading col-sm-12" style="display: flex;">
+                     <input class="form-control" type="text" v-model="searchQuery" placeholder="Search" />
+                     <button v-on:click="filterParam = 'all'" :class="{ active: filterParam == 'all' }"  style="cursor: pointer;background-color: chartreuse;width: 30%;margin-right: 20px;">All</button>
+                     <button v-on:click="filterParam = 'filter_a'" :class="{ active: filterParam == 'filter_a' }"  style="cursor: pointer;background-color: chartreuse;width: 30%;margin-right: 20px;">A</button>
+                     <button v-on:click="filterParam = 'filter_b'" :class="{ active: filterParam == 'filter_b' }"  style="cursor: pointer;background-color: chartreuse;width: 30%;margin-left: 20px;">B</button>
+                       <button class="btn btn-default btn-lg" v-on:click="resortCafes('number')">Show</button>
+                </div>                        
+            </div>
+         <div class="table-responsive">
+            <div class="data" v-for="item in resultQuery">
+                <hr style="border: 4px solid green;" />
+                 <p style="color: red;">{{item.title}}</p>
+                 <p>{{item.category}}</p>
+                 <p>{{item.number}}</p>
+                <hr style="border: 4px solid green;" />
+            </div>
+        </div>
+   </div>
+   </div>
+   <script type="text/javascript" src="./index.js"></script>
+</body>
+</html>

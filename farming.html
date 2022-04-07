@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/farm.css">
+	<link rel="stylesheet" href="library/vue.js">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.js"></script>
+</head>
+<body>
+	<div class="farming">
+	<header class="page-0 content">
+		<div class="content-header">
+			<p class="text">QUICKLP</p>
+		</div>
+		<div class="content-block">
+			<div class="block-right">
+				<div class="blocks">
+				<div class="block">
+					<img src="./img/farming/bnb.svg" width="38" height="38" alt="">
+					<p class="text">BSC</p>
+				</div>
+				<div class="block">
+					<img src="./img/farming/sol.png" width="38" height="38" alt="">
+					<p class="text">Solana</p>
+				</div>
+				<div class="block">
+					<img src="./img/farming/cro.svg" width="38" height="38" alt="">
+					<p class="text">Cronos</p>
+				</div>
+				<div class="block">
+					<img src="./img/farming/avax.svg" width="38" height="38" alt="">
+					<p class="text">Avalanch</p>
+				</div>
+				<div class="block">
+					<img src="./img/farming/matic.svg" width="38" height="38" alt="">
+					<p class="text">Polygon</p>
+				</div>
+				<div class="block">
+					<img src="./img/farming/aoa.svg" width="38" height="38" alt="">
+					<p class="text">Aurora</p>
+				</div>
+				<div class="block">
+					<img src="./img/farming/celo.svg" width="38" height="38" alt="">
+					<p class="text">Celo</p>
+				</div>
+				<div class="block">
+					<img src="./img/farming/movr.svg" width="38" height="38" alt="">
+					<p class="text">Moonriver</p>
+				</div>
+				<div class="block">
+					<img src="./img/farming/xdai.svg" width="38" height="38" alt="">
+					<p class="text">xDai</p>
+				</div>
+				<div class="block">
+					<img src="./img/farming/vlx.svg" width="38" height="38" alt="">
+					<p class="text">Velas</p>
+				</div>
+				<div class="block">
+					<img src="./img/farming/heco.svg" width="38" height="38" alt="">
+					<p class="text">HECO</p>
+				</div>
+				<div class="block">
+					<img src="./img/farming/ftm.png" width="38" height="38" alt="">
+					<p class="text">Fantom</p>
+				</div>
+				<div class="block">
+					<img src="./img/farming/one.png" width="35" height="35" alt="">
+					<p class="text">Harmony</p>
+				</div>		
+			</div>
+		</div>
+			<div class="block-left">
+				<button class="connect-button">
+					<div class="connect-data">
+					 <img class="connect-image" src="./img/wallet.svg" width="24" height="18" />
+					 <p class="connect-header">Connect Wallet</p>
+				    </div>
+				</button>
+				<p class="error">system messages (errors, statuses etc.)</p>
+		</div>
+	</div>
+	</header>
+	<section class="page-1 content">
+		<div class="content-filter">
+			<div class="block-platforms">
+				<div class="platforms">
+					<div class="platform">
+						<button class="btn" :class="{ active : platformActive == 'platforms' }" style="width: 103px;height: 40px;"
+						         v-on:click="filter_platform('platforms')">
+							    <p class="header">All platforms</p>
+						</button>
+					</div>
+					<div class="platform">
+						<button class="btn" :class="{active : platformActive == 'raydium' }" style="width: 71px;height: 40px;"
+						         v-on:click="filter_platform('raydium')">
+							    <div class="btn-data">
+							         <img class="img" src="./img/farming/ray.svg" width="15" height="17">
+							         <p class="header">Ray</p>
+						       </div>
+						</button>
+					</div>
+					<div class="platform">
+						<button class="btn" :class="{ active : platformActive == 'saber' }" style="width: 87px;height: 40px;"
+						         v-on:click="filter_platform('saber')">
+							    <div class="btn-data">
+								     <img class="img" src="./img/farming/saber.svg" width="17" height="17">
+							         <p class="header">Saber</p>
+						        </div>
+						</button>
+					</div>
+					<div class="platform">
+						<button class="btn" :class="{ active : platformActive == 'orca' }" style="width: 81px;height: 40px;"
+						         v-on:click="filter_platform('orca')">
+							    <div class="btn-data">
+							         <img class="img" src="./img/farming/orca.svg" width="17" height="17">
+							         <p class="header">Orca</p>
+						        </div>
+						</button>
+					</div>
+				</div>
+			</div>
+				<div class="blocks">
+					<div class="block-left">
+						<div class="block-vaults">
+							 <div class="vaults">
+							 	  <div class="vault">
+							 	       <button class="btn" :class="{ active : vaultActive == 'vaults' }" style="width: 80px;height: 40px;"
+							 	  	            v-on:click="filter_vault('vaults')">
+							                   <p class="header">All vaults</p>
+						               </button>
+							 	  </div>
+							 	  <div class="vault">
+							 	  	   <button class="btn" :class="{ active : vaultActive == 'stable' }" style="width: 66px;height: 40px;"
+							 	  	            v-on:click="filter_vault('stable')">
+							                   <p class="header">Stable</p>
+						               </button>
+							 	  </div>
+							 	  <div class="vault">
+                                       <button class="btn" :class="{ active : vaultActive == 'new' }" style="width: 53px;height: 40px;"
+                                                v-on:click="filter_vault('new')">
+							                   <p class="header">New</p>
+						               </button>
+							 	  </div>
+							 	  <div class="vault">
+							 	  	   <button class="btn" :class="{ active : vaultActive == 'ended' }" style="width: 66px;height: 40px;"
+							 	  	            v-on:click="filter_vault('ended')">
+							                   <p class="header">Ended</p>
+						               </button>
+							 	  </div>
+							 </div>
+						</div>
+						<div class="switch">
+						<input type="checkbox" id="switch" class="switch-check" />
+						<p class="header">Show Staked</p>
+					   </div>
+					</div>     	
+					<div class="block-right">
+                         <div class="block">
+                         	<img class="search-image" src="./img/search.svg" />
+			                <input type="text" name="" class="search" v-model="searchQuery" placeholder="Filter vaults" />
+			             </div>
+			         </div>
+		           </div>
+	           </div>
+		 <div class="content-table">
+			 <div class="vaults-table_header">
+			 	  <div class="vaults-table__header-cell" style="margin-right: 284px">
+			 	  	   <p class="header">Vault</p>
+			 	 </div>
+			 	 <div class="vaults-table__header-cell" style="margin-right: 66px;">
+			 	 	  <p class="header">Wallet Balance</p>
+			 	 </div>
+			 	 <div class="vaults-table__header-cell" style="margin-right: 66px;">
+			 	 	  <p class="header">Deposited</p>
+			 	 </div>
+			 	 <div class="vaults-table__header-cell" style="margin-right: 50px;">
+			 	 	  <p class="header">Daily APR</p>
+			 	 </div>
+			 	 <div class="vaults-table__header-cell" style="margin-right: 50px;">
+			 	 	  <p class="header">Weekly APY</p>
+			 	 </div>
+			 	 <div class="vaults-table__header-cell" style="margin-right: 83px;">
+			 	 	  <p class="header">Yearly APY</p>
+			 	 </div>
+			 	 <div class="vaults-table__header-cell">
+			 	 	  <button class="farming-update"><img src="./img/farming/update.svg" width="16" height="16"></button>
+			 	 </div>
+              </div>
+               <div class="vaults-table_row" v-for="item in result">
+              	    <div class="vaults-table__header-cell" style="margin-right: auto;">
+			 	  	    <div class="pair-image">
+			     	        <div class="para" style="background: url(./img/farming/para.svg) no-repeat;"></div>
+		    	       </div>
+				       <div class="pair-name">
+				            <p class="header-big">{{item.name}}</p>	
+				            <p class="header-small" style="margin-bottom: 3px;">{{item.type}}</p>
+				            <p class="header-small" style="margin-bottom: 16px;">{{item.tvl}}</p>
+				       </div>
+				   </div>
+			 	    <div class="wallet-table__header-cell" style="margin-right: 88px;">
+			 	  	        <p class="header-big">{{item.balance_coin}}</p>
+			 	 	        <p class="header-small">{{item.balance_usd}}</p> 
+			 	    </div>
+                    <div class="deposit-table__header-cell" style="margin-right: 51px;">
+                	        <p class="header-big">{{item.deposit_coin}}</p>
+                	        <p class="header-small">{{item.deposit_usd}}</p> 
+                   </div>
+                   <div class="daily-table__header-cell" style="margin-right: 91px;">
+                	        <p class="header-big">{{item.apy_day}}</p>
+                   </div>
+                   <div class="week-table__header-cell" style="margin-right: 111px;">
+                	        <p class="header-big">{{item.apy_week}}</p>
+                   </div>
+                   <div class="year-table__header-cell" style="margin-right: 115px;">
+                	        <p class="header-big">{{item.apy_year}}</p>
+                   </div> 
+                   <div class="open-table__header-cell">
+                	        <button class="farming-open"><img src="./img/farming/open.svg" width="19" height="11"></button>
+                   </div> 
+	            </div> 
+	</section>
+	<footer class="page-2">
+	     <hr class="line" />
+	     <div class="content-header content">
+		 <div class="content-left">
+		 	  <p class="header">QUICKLP</p>
+		 </div>
+		 <div class="content-right">
+		 	  <div class="block" style="background: url('./img/farming/discord.svg') no-repeat; width: 55px;height: 42px;">
+		 	  </div>
+		 	  <div class="block" style="background: url('./img/farming/telegram.svg') no-repeat; width: 48px;height: 42px;">
+		 	  </div>
+		 	  <div class="block" style="background: url('./img/farming/twitter.svg') no-repeat; width: 52px;height: 42px;">
+		 	  </div>
+		 </div>
+		</div>
+	</footer>
+ </div>
+<script type="text/javascript" src="./js/farming.js"></script>
+</body>
+</html>
